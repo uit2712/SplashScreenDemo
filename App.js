@@ -9,6 +9,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,6 +20,26 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  constructor(props: Props) {
+    super(props);
+
+    this.state = {
+      splashScreenTimer: null
+    };
+  }
+
+  componentDidMount() {
+    let splashScreenTimer = setInterval(this.hideSplashScreen, 3000);
+    this.setState({ splashScreenTimer });
+    // you can also add sound here :D
+  }
+
+  hideSplashScreen = () => {
+    SplashScreen.hide();
+    clearInterval(this.state.splashScreenTimer);
+  }
+
   render() {
     return (
       <View style={styles.container}>

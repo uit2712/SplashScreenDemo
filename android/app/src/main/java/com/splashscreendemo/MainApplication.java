@@ -43,7 +43,6 @@ public class MainApplication extends Application implements ReactApplication {
 
   @Override
   public void onCreate() {
-    SplashScreen.show(this);
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
   }
