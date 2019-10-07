@@ -33,7 +33,7 @@ dependencies {
             new SplashScreenReactPackage() // here
       );
     }
-	</pre>
+</pre>
 <b>e)</b> Settings: in file 'MainActivity.java' import package base on your module version 'react-native-splash-screen', my version >= 0.3.1
 <pre>
 	// react-native-splash-screen >= 0.3.1
@@ -52,7 +52,7 @@ import android.os.Bundle; // here
         SplashScreen.show(this);  // here
         super.onCreate(savedInstanceState);
     }
-	</pre>
+</pre>
 <b>3) Step 3</b>: Create file called 'launch_screen.xml' in folder 'android/app/src/main/res/layout'
 (create folder 'layout' if it does not exist). The contents of this file:
 
@@ -90,19 +90,19 @@ dependencies {
 
 In <b>'Step 3'</b>: we have this line:
 <pre>
-<ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/launch_screen" android:scaleType="centerCrop" />
+	&lt;ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/launch_screen" android:scaleType="centerCrop" /gt;
 </pre>
 or this line:
 <pre>
-<pl.droidsonroids.gif.GifTextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/launch_screen"
-    />
-	</pre>
+	&lt;pl.droidsonroids.gif.GifTextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/launch_screen"
+	    /gt;
+</pre>
 And you see that we have '@drawable/launch_screen', here 'launch_screen' is the name of image
 as a splash screen in the folder 'drawable', so let create a folder 'drawable' in
-'android/app/src/main/res/' and add image 'launch_screen' to this folder
+'android/app/src/main/res/' and add image 'launch_screen' to this folder<br>
 <b>5) Step 5</b>: It is time to show our splash screen, in component that you want to show splash screen:
 <b>a)</b> Import module 'react-native-splash-screen':
 
@@ -128,5 +128,5 @@ constructor(props: Props) {
     SplashScreen.hide();
     clearInterval(this.state.splashScreenTimer);
   }
-  </pre>
+</pre>
 <b>THANK YOU FOR WATCHING VIDEO, REMEMBER TO LIKE AND SUBSCRIBE FOR NEW VIDEOS</b>
