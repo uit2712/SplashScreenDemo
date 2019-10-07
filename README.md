@@ -58,25 +58,25 @@ import android.os.Bundle; // here
 
 <b>a)</b> If you want to show static image as a splash screen, use this:
 <pre>
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/launch_screen" android:scaleType="centerCrop" />
-</RelativeLayout>
+    android:layout_height="match_parent"&gt;
+    &lt;ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/launch_screen" android:scaleType="centerCrop" /&gt;
+&lt;/RelativeLayout&gt;
 </pre>
 <b>b)</b> Or, If you want to show dynamic image (gif) as a splash screen, use this:
 <pre>
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <pl.droidsonroids.gif.GifTextView
+    android:layout_height="match_parent"&gt;
+    &lt;pl.droidsonroids.gif.GifTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/launch_screen"
-    />
-</RelativeLayout>
+    /&gt;
+&lt;/RelativeLayout&gt;
 </pre>
 And also add this line in file 'android/app/build.gradle'
 <pre>
