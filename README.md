@@ -1,6 +1,8 @@
 # SplashScreenDemo
 Splash screen in React Native
 
+YOUTUBE VIDEO: 
+
 <b>----------------------SPLASH SCREEN IN REACT NATIVE----------------------</b><br>
 <b>1) Step 1</b>: Install necessary module 'react-native-splash-screen':
 npm i react-native-splash-screen --save
