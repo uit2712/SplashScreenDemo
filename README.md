@@ -33,7 +33,7 @@ dependencies {
 ```javascript
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
-	.....
+.....
 @Override
 protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
