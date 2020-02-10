@@ -55,7 +55,7 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 }
 ```
-<b>3) Step 3</b>: Create file called 'launch_screen.xml' in folder 'android/app/src/main/res/layout'
+<h2>3) Step 3</h2>: Create file called 'launch_screen.xml' in folder 'android/app/src/main/res/layout'
 (create folder 'layout' if it does not exist). The contents of this file:
 
 <b>a)</b> If you want to show static image as a splash screen, use this:
@@ -88,7 +88,7 @@ dependencies {
     ...
 }
 ```
-<b>4) Step 4</b>: Add image splash screen:
+<h2>4) Step 4</h2>: Add image splash screen:
 
 In <b>'Step 3'</b>: we have this line:
 ```javascript
@@ -105,7 +105,7 @@ or this line:
 And you see that we have '@drawable/launch_screen', here 'launch_screen' is the name of image
 as a splash screen in the folder 'drawable', so let create a folder 'drawable' in
 'android/app/src/main/res/' and add image 'launch_screen' to this folder<br>
-<b>5) Step 5</b>: It is time to show our splash screen, in component that you want to show splash screen:
+<h2>5) Step 5</h2>: It is time to show our splash screen, in component that you want to show splash screen:<br>
 <b>a)</b> Import module 'react-native-splash-screen':
 
 ```javascript
