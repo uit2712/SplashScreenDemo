@@ -1,7 +1,7 @@
 # SplashScreenDemo
 Splash screen in React Native
 
-<h2>YOUTUBE VIDEO:</h2>
+<h2>YOUTUBE VIDEO: https://youtu.be/rBMiusSqjCk</h2>
 
 <h2>DEMO</h2>
 <h3>Static image splash screen</h3>
